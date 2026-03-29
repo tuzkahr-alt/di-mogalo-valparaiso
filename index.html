@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostal Di'Mogalo | La mejor vista de Valparaíso, Chile</title>
+    <meta name="description" content="Descansa con la mejor vista de la bahía en Valparaíso. Hostal Di'Mogalo ofrece habitaciones cómodas, ambiente tranquilo y precios accesibles. Reserva directa por WhatsApp.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/56959191835?text=Hola,%20quiero%20consultar%20por%20disponibilidad%20en%20Hostal%20Di’Mogalo" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Reemplacé con el nuevo logo de DM -->
+                <img src="logo-nuevo.jpg" alt="Logo Hostal Di'Mogalo" onerror="this.src='558786356_122136141164928943_8942268156538273505_n.jpg'">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio" data-i18n="nav_home">Inicio</a></li>
+                    <li><a href="#habitaciones" data-i18n="nav_rooms">Habitaciones</a></li>
+                    <li><a href="#servicios" data-i18n="nav_services">Servicios</a></li>
+                    <li><a href="#tips" data-i18n="nav_tips">Tips Turísticos</a></li>
+                    <li><a href="#contacto" class="btn-cta-small" data-i18n="nav_book">Reservar</a></li>
+                </ul>
+            </nav>
+            <div class="header-tools">
+                <!-- Select de Idioma -->
+                <select id="lang-selector" class="lang-selector">
+                    <option value="es">🇪🇸 ES</option>
+                    <option value="en">🇺🇸 EN</option>
+                    <option value="pt">🇧🇷 PT</option>
+                </select>
+                <!-- Icono de Facebook -->
+                <a href="https://web.facebook.com/profile.php?id=61577868307542" target="_blank" class="social-icon header-fb" aria-label="Facebook">
+                    <i data-lucide="facebook"></i>
+                </a>
+                <div class="menu-mobile">
+                    <i data-lucide="menu"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 class="fade-in" data-i18n="hero_title">Descansa con la mejor vista de Valparaíso</h1>
+            <p class="fade-in-delay" data-i18n="hero_sub">Habitaciones cómodas, ambiente tranquilo y una experiencia única frente a la bahía.</p>
+            <div class="hero-actions fade-in-delay-2">
+                <a href="https://wa.me/56959191835?text=Hola,%20quiero%20consultar%20por%20disponibilidad%20en%20Hostal%20Di’Mogalo" class="btn btn-primary" target="_blank" data-i18n="btn_whatsapp">
+                    Reservar por WhatsApp
+                </a>
+                <a href="#habitaciones" class="btn btn-secondary" data-i18n="btn_rooms">Ver habitaciones</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Experience section -->
+    <section class="experience section-padding">
+        <div class="container">
+            <div class="experience-content" data-reveal>
+                <span class="section-tag" data-i18n="exp_tag">Experiencia Di'Mogalo</span>
+                <h2 data-i18n="exp_title">“No es solo hospedarte… es despertar y dormir con una de las vistas más hermosas de Chile.”</h2>
+                <div class="experience-features">
+                    <div class="exp-item">
+                        <i data-lucide="moon"></i>
+                        <span data-i18n="exp_f1">Vista nocturna privilegiada</span>
+                    </div>
+                    <div class="exp-item">
+                        <i data-lucide="coffee"></i>
+                        <span data-i18n="exp_f2">Tranquilidad absoluta</span>
+                    </div>
+                    <div class="exp-item">
+                        <i data-lucide="map-pin"></i>
+                        <span data-i18n="exp_f3">Ubicación estratégica</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="habitaciones" class="rooms section-padding">
+        <div class="container">
+            <h2 class="section-title" data-reveal data-i18n="rooms_title">Nuestras Habitaciones</h2>
+            
+            <div class="room-card" data-reveal>
+                <div class="room-image">
+                    <!-- Agregamos la nueva habitación -->
+                    <img src="habitacion-nueva.jpg" alt="Habitación con balcón" onerror="this.src='1.jpg'">
+                </div>
+                <div class="room-details">
+                    <h3 data-i18n="r1_title">Habitación Privada con Balcón</h3>
+                    <p data-i18n="r1_desc">Ambiente cálido con un gran ventanal y acceso directo al exterior para disfrutar de Valparaíso y la bahía.</p>
+                    <ul class="room-bullets">
+                        <li><i data-lucide="check"></i> <span data-i18n="r1_b1">Cama reconfortante y espaciosa</span></li>
+                        <li><i data-lucide="check"></i> <span data-i18n="r1_b2">Luz natural y detalles acogedores</span></li>
+                        <li><i data-lucide="check"></i> <span data-i18n="r1_b3">Privacidad total</span></li>
+                        <li><i data-lucide="check"></i> <span data-i18n="r1_b4">Ideal para relajarse</span></li>
+                    </ul>
+                    <a href="https://wa.me/56959191835?text=Hola,%20quiero%20conocer%20disponibilidad%20de%20habitaciones" class="btn btn-primary" data-i18n="btn_avail">Consultar disponibilidad</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tourist Tips Section -->
+    <section id="tips" class="tips section-padding">
+        <div class="container">
+            <div class="text-center" data-reveal>
+                <span class="section-tag" data-i18n="tips_tag">Turismo Local</span>
+                <h2 class="section-title" data-i18n="tips_title">Consejos para disfrutar Valparaíso</h2>
+                <p class="tips-intro" data-i18n="tips_desc">Valparaíso es una ciudad mágica llena de cerros, colores y arte. Aquí tienes nuestros mejores consejos para aprovecharla al máximo:</p>
+            </div>
+            <div class="tips-grid" data-reveal>
+                <div class="tip-card">
+                    <i data-lucide="sun"></i>
+                    <h3 data-i18n="t1_t">Recorre de día</h3>
+                    <p data-i18n="t1_d">Camina por el Cerro Alegre y Concepción durante el día para descubrir los mejores murales y cafeterías.</p>
+                </div>
+                <div class="tip-card">
+                    <i data-lucide="train"></i>
+                    <h3 data-i18n="t2_t">Usa los Ascensores</h3>
+                    <p data-i18n="t2_d">Son patrimonio nacional, muy económicos y te ahorrarán subir muchas escaleras. ¡Una experiencia clásica!</p>
+                </div>
+                <div class="tip-card">
+                    <i data-lucide="camera"></i>
+                    <h3 data-i18n="t3_t">Miradores Essenciales</h3>
+                    <p data-i18n="t3_d">No te pierdas el Paseo Gervasoni y el Paseo Atkinson al atardecer para fotos inolvidables.</p>
+                </div>
+                <div class="tip-card">
+                    <i data-lucide="utensils"></i>
+                    <h3 data-i18n="t4_t">Gastronomía del Mar</h3>
+                    <p data-i18n="t4_d">Prueba las empanadas de mariscos y el tradicional caldillo de congrio cerca del puerto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services section-padding">
+        <div class="container">
+            <h2 class="section-title" data-reveal data-i18n="serv_title">Todo lo que necesitas</h2>
+            <div class="services-grid" data-reveal>
+                <div class="service-item">
+                    <i data-lucide="wifi"></i>
+                    <h3 data-i18n="s1_t">WiFi Alta Velocidad</h3>
+                    <p data-i18n="s1_d">Conectividad estable en todas las áreas de la casa.</p>
+                </div>
+                <div class="service-item">
+                    <i data-lucide="wind"></i>
+                    <h3 data-i18n="s2_t">Ambiente Tranquilo</h3>
+                    <p data-i18n="s2_d">Ideal para descansar después de recorrer los cerros.</p>
+                </div>
+                <div class="service-item">
+                    <i data-lucide="navigation"></i>
+                    <h3 data-i18n="s3_t">Ubicación Pro</h3>
+                    <p data-i18n="s3_d">Cerca de los puntos más emblemáticos de la ciudad.</p>
+                </div>
+                <div class="service-item">
+                    <i data-lucide="users"></i>
+                    <h3 data-i18n="s4_t">Atención Familiar</h3>
+                    <p data-i18n="s4_d">Nos encargamos de que te sientas como en casa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comprehensive Reviews Section -->
+    <section class="reviews-section section-padding">
+        <div class="container">
+            <div class="text-center" data-reveal>
+                <span class="section-tag" data-i18n="rev_tag">Reseñas</span>
+                <h2 class="section-title" data-i18n="rev_title">Lo que dicen nuestros huéspedes</h2>
+            </div>
+            <div class="testimonials" data-reveal>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p data-i18n="rev1_t">“La vista nocturna es simplemente espectacular. El hostal es súper tranquilo y la atención de los dueños te hace sentir muy cómodo. ¡Volveré sin duda!”</p>
+                    <span class="client">Andrea M., 🇨🇱</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p data-i18n="rev2_t">“Perfecto para mochileros que buscan algo de nivel y buen precio. Habitaciones impecables y una ubicación que te permite llegar a todo caminando.”</p>
+                    <span class="client">Mark R., 🇺🇸</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p data-i18n="rev3_t">“Un lugar lleno de magia. La habitación con balcón es un sueño. El trato fue espectacular, sientes la verdadera vibra porteña.”</p>
+                    <span class="client">Camila y João, 🇧🇷</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="contacto" class="cta-final section-padding">
+        <div class="container text-center" data-reveal>
+            <h2 data-i18n="cta_title">No te quedes sin tu habitación</h2>
+            <p data-i18n="cta_desc">Alta demanda en temporada. Reserva rápida en minutos con atención directa sin intermediarios.</p>
+            <a href="https://wa.me/56959191835?text=Hola,%20quiero%20reservar%20ahora" class="btn btn-primary large" data-i18n="btn_book_now">
+                Reservar ahora por WhatsApp
+            </a>
+            <p class="whatsapp-number">+569 5919 1835</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="logo-nuevo.jpg" alt="Logo Hostal Di'Mogalo" onerror="this.src='558786356_122136141164928943_8942268156538273505_n.jpg'" class="filter-invert">
+                <p data-i18n="footer_slogan">La mejor vista de Valparaíso.</p>
+                <div class="footer-socials" style="margin-top: 1rem;">
+                    <a href="https://web.facebook.com/profile.php?id=61577868307542" target="_blank" class="social-icon" aria-label="Facebook Oficial">
+                        <i data-lucide="facebook"></i> Síguenos en Facebook
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footer_links">Enlaces</h4>
+                <ul>
+                    <li><a href="#inicio" data-i18n="nav_home">Inicio</a></li>
+                    <li><a href="#habitaciones" data-i18n="nav_rooms">Habitaciones</a></li>
+                    <li><a href="#tips" data-i18n="nav_tips">Tips</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4 data-i18n="footer_contact">Contacto</h4>
+                <p>Valparaíso, Chile</p>
+                <p>WhatsApp: +569 5919 1835</p>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Hostal Di'Mogalo. <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
