@@ -1,7 +1,7 @@
 {
-  "logo": "logo_clean.png",
-  "footer_logo": "558786356_122136141164928943_8942268156538273505_n.jpg",
-  "hostal_name": "Hostal Di'Mogalo Propiedades",
+  "logo": "logo_official.png",
+  "footer_logo": "logo_official.png",
+  "hostal_name": "Hostal Di'Mogalo & Propiedades",
   "hero": {
     "title": "Un ambiente de paz y equilibrio con la mejor vista porteña",
     "subtitle": "Estamos ubicados en Valparaíso, a 1 minuto de Avenida Ecuador (Cerca de Plazas Bismark y Camogli).",
@@ -46,7 +46,6 @@
   "services_title_text": "Amenidades y Servicios",
   "services": [
     { "icon": "wifi", "title": "Conectividad y Ocio", "text": "Wi-Fi de alta velocidad y Smart TV en cada habitación para tu entretenimiento." },
-    { "icon": "home", "title": "Áreas Comunes", "text": "Acceso a cocina grande full equipada, quincho para asados y terrazas para almorzar o cenar." },
     { "icon": "droplets", "title": "Baños Compartidos", "text": "Contamos con 2 baños amplios y limpios compartidos entre un total de 6 habitaciones." },
     { "icon": "credit-card", "title": "Pagos Flexibles", "text": "Aceptamos pagos en Efectivo y Transferencias bancarias directas." }
   ],
