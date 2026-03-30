@@ -1,10 +1,10 @@
 {
   "logo": "logo_clean.png",
   "footer_logo": "558786356_122136141164928943_8942268156538273505_n.jpg",
-  "hostal_name": "Hostal Di'Mogalo",
+  "hostal_name": "Hostal Di'Mogalo Propiedades",
   "hero": {
-    "title": "Despierta con la mejor vista de la bahía de Valparaíso",
-    "subtitle": "Un refugio de paz en el corazón de los cerros. Habitaciones exclusivas, ambiente íntimo y una panorámica inolvidable.",
+    "title": "Un ambiente de paz y equilibrio con la mejor vista porteña",
+    "subtitle": "Estamos ubicados en Valparaíso, a 1 minuto de Avenida Ecuador (Cerca de Plazas Bismark y Camogli).",
     "background": "VISTA.jpg"
   },
   "exp_section_title": "Experiencia Di'Mogalo",
@@ -13,58 +13,64 @@
     "items": [
       { "icon": "moon", "text": "Contempla el espectáculo de luces del puerto" },
       { "icon": "coffee", "text": "Desayuna frente al océano en paz total" },
-      { "icon": "map-pin", "text": "Camina a los murales más famosos en minutos" }
+      { "icon": "map-pin", "text": "Cerca de Avenida Ecuador y Plazas patrimoniales" }
     ]
   },
-  "rooms_title_text": "Nuestras Habitaciones",
+  "rooms_title_text": "Nuestras Habitaciones y Tarifas",
   "rooms": [
     {
-      "title": "Suite Privada con Balcón Panorámico",
-      "description": "Nuestra joya. Un espacio bañado en luz natural con un amplio ventanal que se abre a Valparaíso y su puerto. Perfecta para quienes buscan inspiración y romance.",
+      "title": "Habitación Diaria Pareja",
+      "description": "Disfruta de la mejor vista de la bahía en un ambiente íntimo y acogedor. Valor: $25.000.",
       "image": "1.jpg",
-      "features": ["Cama Queen Ergonómica", "Balcón Privado al Mar", "Escritorio Mirador", "Privacidad Absoluta"]
+      "features": ["Cama 2 plazas", "Smart TV", "Balcón independiente", "Vista a la bahía", "Baño compartido"]
     },
     {
-      "title": "Habitación Doble Superior 'Atardecer'",
-      "description": "Donde el diseño porteño se une con el confort moderno. Amplia, elegante y diseñada para un descanso profundo tras recorrer las calles mágicas.",
+      "title": "Habitación Diaria Individual",
+      "description": "Perfecta para viajeros solitarios o trabajadores que buscan descanso y tranquilidad. Valor: $15.000.",
       "image": "2.jpg",
-      "features": ["Cama King Size", "Decoración de Autor", "WiFi 5G dedicada", "Ventilación Natural"]
+      "features": ["Cama individual", "Smart TV", "Wi-Fi alta velocidad", "Baño compartido"]
     },
     {
-      "title": "Habitación Twin 'Vista Alegre'",
-      "description": "Espacio compartido con alma de hogar. Ideal para viajeros que desean calidad, seguridad y la mejor ubicación sin renunciar a la belleza.",
+      "title": "Arriendo Mensual Matrimonial",
+      "description": "Ideal para estadías largas. Valor: Desde $250.000 a $270.000 (según comodidades).",
+      "image": "VISTA.jpg",
+      "features": ["Especial para parejas", "Smart TV incluido", "Acceso a áreas comunes", "Cerca de Plazas Bismark"]
+    },
+    {
+      "title": "Arriendo Mensual Individual",
+      "description": "Ideal para estudiantes o trabajadores. Valor: Desde $170.000 a $230.000.",
       "image": "4.jpg",
-      "features": ["Camas Flex Plus", "Compartimientos Seguros", "Luz Natural", "Acceso a Kitchenette"]
+      "features": ["Ambiente de estudio y paz", "Smart TV", "Lavandería incluida", "Ubicación estratégica"]
     }
   ],
-  "services_title_text": "Todo lo que necesitas",
+  "services_title_text": "Amenidades y Servicios",
   "services": [
-    { "icon": "wifi", "title": "Conectividad Total", "text": "Fibra óptica de alta velocidad (500MB) perfecta para nómadas digitales y videollamadas." },
-    { "icon": "wind", "title": "Santuario de Reposo", "text": "Ambiente diseñado para el silencio y la desconexión total, lejos del ruido vehicular." },
-    { "icon": "navigation", "title": "Cerca de la Magia", "text": "A pasos de los ascensores patrimoniales y los mejores miradores del Cerro Alegre." },
-    { "icon": "users", "title": "Anfitriones Locales", "text": "Atención cálida y consejos de expertos para vivir la ciudad como un verdadero porteño." }
+    { "icon": "wifi", "title": "Servicios Incluidos", "text": "Wi-Fi, Smart TV, Ropa de cama, Cocina full equipada, Quincho, Terrazas y Lavandería (1 vez p/semana)." },
+    { "icon": "star", "title": "Servicios Extra ($)", "text": "Uso de Jacuzzi, Gimnasio, Desayuno, Almuerzo y Once." },
+    { "icon": "droplets", "title": "Nota Importante", "text": "Contamos con 2 baños compartidos amplios para un total de 6 habitaciones, asegurando higiene constante." },
+    { "icon": "credit-card", "title": "Métodos de Pago", "text": "Aceptamos Efectivo y Transferencias bancarias directas." }
   ],
-  "tips_title_main": "Consejos para disfrutar Valparaíso",
-  "tips_desc_main": "Valparaíso es una ciudad mágica llena de cerros, colores y arte. Aquí tienes nuestros mejores consejos para aprovecharla al máximo:",
+  "tips_title_main": "Reglas de Convivencia",
+  "tips_desc_main": "Para asegurar un ambiente de paz y equilibrio, solicitamos a nuestros huéspedes respetar las siguientes normas:",
   "tips": [
-    { "icon": "sun", "title": "Hora Dorada en los Cerros", "text": "Recorre Cerro Alegre y Concepción a las 6 PM. La luz sobre los murales crea un escenario cinematográfico único." },
-    { "icon": "train", "title": "Circuito de Ascensores", "text": "Usa el Ascensor El Peral y el Reina Victoria. Son museos vivos que te conectan con la historia de la ciudad." },
-    { "icon": "camera", "title": "Miradores Secretos", "text": "Visita el Paseo Yugoslavo al anochecer. Es el mejor punto para ver cómo se encienden las luces de los barcos." },
-    { "icon": "utensils", "title": "Sabores del Puerto", "text": "No te vayas sin probar la Chorrillana original o los Mariscos frescos en el Mercado al mediodía." }
+    { "icon": "volume-x", "title": "Respeto y Silencio", "text": "Respeto total al descanso nocturno. Prohibido ruidos molestos en horas de sueño." },
+    { "icon": "key", "title": "Seguridad", "text": "Portón de calle y habitaciones siempre con llave. No se permiten visitas externas no registradas." },
+    { "icon": "zap-off", "title": "Seguridad Eléctrica", "text": "Prohibido el uso de calefactores, encimeras o termos eléctricos en las piezas." },
+    { "icon": "trash-2", "title": "Limpieza y Responsabilidad", "text": "El huésped es responsable de su basura y del aseo del baño tras su uso inmediato." }
   ],
   "contact": {
     "whatsapp": "+569 5919 1835",
     "facebook": "https://web.facebook.com/profile.php?id=61577868307542",
-    "address": "Pasaje El Vergel, Valparaíso, Chile",
+    "address": "Pasaje El Vergel, Valparaíso (A 1 min de Av. Ecuador)",
     "gmaps_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1672.6373809623832!2d-71.616782!3d-33.045866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689e0d9b5b4859f%3A0xe5a1b3e8c1e8a8e1!2sValpara%C3%ADso%2C%20Chile!5e0!3m2!1ses!2scl!4v1700000000000!5m2!1ses!2scl"
   },
   "reviews_title_text": "Lo que dicen nuestros huéspedes",
   "reviews": [
     { "stars": "★★★★★", "text": "“La vista nocturna es simplemente espectacular. El hostal es súper tranquilo y la atención de los dueños te hace sentir en casa.”", "client": "Andrea M., 🇨🇱" },
-    { "stars": "★★★★★", "text": "“Incredible place for remote workers. The WiFi was flawless and working with that view was a dream. Best value in Valparaíso.”", "client": "Mark R., 🇺🇸" },
-    { "stars": "★★★★★", "text": "“Um lugar mágico. O quarto con varanda é um sonho realizado. Sentimos a verdadera vibra porteña. Voltaremos!”", "client": "Camila y João, 🇧🇷" }
+    { "stars": "★★★★★", "text": "“Perfecto para estudiar. El ambiente de silencio y la vista me ayudaron mucho en mis exámenes. Muy recomendado.”", "client": "Estudiante U. Valpo" },
+    { "stars": "★★★★★", "text": "“O quarto com varanda é incrível. A localização perto da Avenida Ecuador facilita tudo. Pessoal nota 10!”", "client": "Ricardo S., 🇧🇷" }
   ],
-  "cta_title": "No te quedes sin tu habitación",
-  "cta_desc": "Alta demanda en temporada. Reserva rápida en minutos con atención directa sin intermediarios.",
-  "cta_button_text": "Reservar ahora por WhatsApp"
+  "cta_title": "Haz tu reserva ahora",
+  "cta_desc": "Consulta disponibilidad para estadías diarias o arriendos mensuales directamente por WhatsApp.",
+  "cta_button_text": "Consultar por WhatsApp"
 }

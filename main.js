@@ -1,10 +1,10 @@
 const translations = {
   es: {
     nav_home: "Inicio",
-    nav_rooms: "Habitaciones",
+    nav_rooms: "Habitaciones y Tarifas",
     nav_services: "Servicios",
     nav_location: "Ubicación",
-    nav_tips: "Tips Turísticos",
+    nav_rules: "Reglas",
     nav_book: "Reservar",
     hero_title: "Descansa con la mejor vista de Valparaíso",
     hero_sub: "Habitaciones cómodas, ambiente tranquilo y una experiencia única frente a la bahía.",
