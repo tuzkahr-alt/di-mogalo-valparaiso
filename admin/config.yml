@@ -1,0 +1,36 @@
+backend:
+  name: github
+  repo: tuzkahr-alt/HOSTAL-WEB
+  branch: master
+
+media_folder: "" # Store images in the root folder as they currently are
+public_folder: "/"
+
+collections:
+  - name: "pages"
+    label: "Páginas"
+    files:
+      - label: "Contenido Principal"
+        name: "main"
+        file: "data/content.json"
+        fields:
+          - {label: "Hero Título", name: "hero", widget: "object", fields: [
+              {label: "Título", name: "title", widget: "string"},
+              {label: "Subtítulo", name: "subtitle", widget: "text"},
+              {label: "Imagen de Fondo", name: "background", widget: "image"}
+            ]}
+          - {label: "Habitaciones", name: "rooms", widget: "list", fields: [
+              {label: "Título", name: "title", widget: "string"},
+              {label: "Descripción", name: "description", widget: "text"},
+              {label: "Imagen", name: "image", widget: "image"}
+            ]}
+          - {label: "Contacto", name: "contact", widget: "object", fields: [
+              {label: "WhatsApp", name: "whatsapp", widget: "string"},
+              {label: "Facebook Link", name: "facebook", widget: "string"},
+              {label: "Dirección", name: "address", widget: "string"}
+            ]}
+          - {label: "Reseñas (Reviews)", name: "reviews", widget: "list", fields: [
+              {label: "Estrellas", name: "stars", widget: "string"},
+              {label: "Texto", name: "text", widget: "text"},
+              {label: "Cliente", name: "client", widget: "string"}
+            ]}

@@ -1,0 +1,35 @@
+{
+  "hero": {
+    "title": "Descansa con la mejor vista de Valparaíso",
+    "subtitle": "Habitaciones cómodas, ambiente tranquilo y una experiencia única frente a la bahía.",
+    "background": "VISTA.jpg"
+  },
+  "rooms": [
+    {
+      "title": "Habitación Privada con Balcón",
+      "description": "Ambiente cálido con un gran ventanal y acceso directo al exterior para disfrutar de Valparaíso y la bahía.",
+      "image": "1.jpg"
+    }
+  ],
+  "contact": {
+    "whatsapp": "+569 5919 1835",
+    "facebook": "https://web.facebook.com/profile.php?id=61577868307542",
+    "address": "Valparaíso, Chile"
+  },
+  "reviews": [
+    {
+      "stars": "★★★★★",
+      "text": "“La vista nocturna es simplemente espectacular. El hostal es súper tranquilo y la atención de los dueños te hace sentir muy cómodo. ¡Volveré sin duda!”",
+      "client": "Andrea M., 🇨🇱"
+    },
+    {
+      "stars": "★★★★★",
+      "text": "“Perfecto para mochileros que buscan algo de nivel y buen precio. Habitaciones impecables y una ubicación que te permite llegar a todo caminando.”",
+      "client": "Mark R., 🇺🇸"
+    },
+    {
+      "stars": "★★★★★",
+      "text": "“Un lugar lleno de magia. La habitación con balcón es un sueño. El trato fue espectacular, sientes la verdadera vibra porteña.”"
+    }
+  ]
+}

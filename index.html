@@ -10,10 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/56959191835?text=Hola,%20quiero%20consultar%20por%20disponibilidad%20en%20Hostal%20Di’Mogalo" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <a id="whatsapp-float-link" href="https://wa.me/56959191835?text=Hola,%20quiero%20consultar%20por%20disponibilidad%20en%20Hostal%20Di’Mogalo" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
         <i data-lucide="message-circle"></i>
     </a>
 
@@ -55,8 +56,8 @@
     <section id="inicio" class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content container">
-            <h1 class="fade-in" data-i18n="hero_title">Descansa con la mejor vista de Valparaíso</h1>
-            <p class="fade-in-delay" data-i18n="hero_sub">Habitaciones cómodas, ambiente tranquilo y una experiencia única frente a la bahía.</p>
+            <h1 id="hero-title" class="fade-in" data-i18n="hero_title">Descansa con la mejor vista de Valparaíso</h1>
+            <p id="hero-subtitle" class="fade-in-delay" data-i18n="hero_sub">Habitaciones cómodas, ambiente tranquilo y una experiencia única frente a la bahía.</p>
             <div class="hero-actions fade-in-delay-2">
                 <a href="https://wa.me/56959191835?text=Hola,%20quiero%20consultar%20por%20disponibilidad%20en%20Hostal%20Di’Mogalo" class="btn btn-primary" target="_blank" data-i18n="btn_whatsapp">
                     Reservar por WhatsApp
@@ -210,12 +211,12 @@
     <!-- Final CTA -->
     <section id="contacto" class="cta-final section-padding">
         <div class="container text-center" data-reveal>
-            <h2 data-i18n="cta_title">No te quedes sin tu habitación</h2>
-            <p data-i18n="cta_desc">Alta demanda en temporada. Reserva rápida en minutos con atención directa sin intermediarios.</p>
-            <a href="https://wa.me/56959191835?text=Hola,%20quiero%20reservar%20ahora" class="btn btn-primary large" data-i18n="btn_book_now">
+                    <h2 id="cta-title" data-i18n="cta_title">No te quedes sin tu habitación</h2>
+            <p id="cta-desc" data-i18n="cta_desc">Alta demanda en temporada. Reserva rápida en minutos con atención directa sin intermediarios.</p>
+            <a id="cta-whatsapp-link" href="https://wa.me/56959191835?text=Hola,%20quiero%20reservar%20ahora" class="btn btn-primary large" data-i18n="btn_book_now">
                 Reservar ahora por WhatsApp
             </a>
-            <p class="whatsapp-number">+569 5919 1835</p>
+            <p id="whatsapp-number-display" class="whatsapp-number">+569 5919 1835</p>
         </div>
     </section>
 

@@ -275,4 +275,38 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+  // CMS CONTENT LOADER
+  const loadCMSContent = async () => {
+    try {
+      const response = await fetch('data/content.json');
+      if (!response.ok) return;
+      const data = await response.json();
+      
+      // Update Hero
+      if (data.hero) {
+        if (data.hero.title) document.getElementById('hero-title').textContent = data.hero.title;
+        if (data.hero.subtitle) document.getElementById('hero-subtitle').textContent = data.hero.subtitle;
+        if (data.hero.background) document.getElementById('inicio').style.backgroundImage = `url('${data.hero.background}')`;
+      }
+      
+      // Update Contact/WhatsApp
+      if (data.contact && data.contact.whatsapp) {
+        const waLink = `https://wa.me/${data.contact.whatsapp.replace(/\s+/g, '')}`;
+        document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+          link.href = waLink;
+        });
+        if (document.getElementById('whatsapp-number-display')) {
+          document.getElementById('whatsapp-number-display').textContent = data.contact.whatsapp;
+        }
+      }
+      
+      // Note: For lists like rooms or reviews, we'd need more complex injection.
+      // For now, we update the primary fields to demonstrate the CMS functionality.
+      
+    } catch (err) {
+      console.log('CMS data not loaded, using defaults.');
+    }
+  };
+
+  loadCMSContent();
 });
