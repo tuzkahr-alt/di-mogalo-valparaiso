@@ -1,35 +1,70 @@
 {
+  "logo": "logo_clean.png",
+  "footer_logo": "558786356_122136141164928943_8942268156538273505_n.jpg",
+  "hostal_name": "Hostal Di'Mogalo",
   "hero": {
-    "title": "Descansa con la mejor vista de Valparaíso",
-    "subtitle": "Habitaciones cómodas, ambiente tranquilo y una experiencia única frente a la bahía.",
+    "title": "Despierta con la mejor vista de la bahía de Valparaíso",
+    "subtitle": "Un refugio de paz en el corazón de los cerros. Habitaciones exclusivas, ambiente íntimo y una panorámica inolvidable.",
     "background": "VISTA.jpg"
   },
+  "exp_section_title": "Experiencia Di'Mogalo",
+  "experience": {
+    "title": "“Hostal Di'Mogalo no es solo un lugar donde dormir… es el balcón desde donde Valparaíso te cuenta sus historias.”",
+    "items": [
+      { "icon": "moon", "text": "Contempla el espectáculo de luces del puerto" },
+      { "icon": "coffee", "text": "Desayuna frente al océano en paz total" },
+      { "icon": "map-pin", "text": "Camina a los murales más famosos en minutos" }
+    ]
+  },
+  "rooms_title_text": "Nuestras Habitaciones",
   "rooms": [
     {
-      "title": "Habitación Privada con Balcón",
-      "description": "Ambiente cálido con un gran ventanal y acceso directo al exterior para disfrutar de Valparaíso y la bahía.",
-      "image": "1.jpg"
+      "title": "Suite Privada con Balcón Panorámico",
+      "description": "Nuestra joya. Un espacio bañado en luz natural con un amplio ventanal que se abre a Valparaíso y su puerto. Perfecta para quienes buscan inspiración y romance.",
+      "image": "1.jpg",
+      "features": ["Cama Queen Ergonómica", "Balcón Privado al Mar", "Escritorio Mirador", "Privacidad Absoluta"]
+    },
+    {
+      "title": "Habitación Doble Superior 'Atardecer'",
+      "description": "Donde el diseño porteño se une con el confort moderno. Amplia, elegante y diseñada para un descanso profundo tras recorrer las calles mágicas.",
+      "image": "2.jpg",
+      "features": ["Cama King Size", "Decoración de Autor", "WiFi 5G dedicada", "Ventilación Natural"]
+    },
+    {
+      "title": "Habitación Twin 'Vista Alegre'",
+      "description": "Espacio compartido con alma de hogar. Ideal para viajeros que desean calidad, seguridad y la mejor ubicación sin renunciar a la belleza.",
+      "image": "4.jpg",
+      "features": ["Camas Flex Plus", "Compartimientos Seguros", "Luz Natural", "Acceso a Kitchenette"]
     }
+  ],
+  "services_title_text": "Todo lo que necesitas",
+  "services": [
+    { "icon": "wifi", "title": "Conectividad Total", "text": "Fibra óptica de alta velocidad (500MB) perfecta para nómadas digitales y videollamadas." },
+    { "icon": "wind", "title": "Santuario de Reposo", "text": "Ambiente diseñado para el silencio y la desconexión total, lejos del ruido vehicular." },
+    { "icon": "navigation", "title": "Cerca de la Magia", "text": "A pasos de los ascensores patrimoniales y los mejores miradores del Cerro Alegre." },
+    { "icon": "users", "title": "Anfitriones Locales", "text": "Atención cálida y consejos de expertos para vivir la ciudad como un verdadero porteño." }
+  ],
+  "tips_title_main": "Consejos para disfrutar Valparaíso",
+  "tips_desc_main": "Valparaíso es una ciudad mágica llena de cerros, colores y arte. Aquí tienes nuestros mejores consejos para aprovecharla al máximo:",
+  "tips": [
+    { "icon": "sun", "title": "Hora Dorada en los Cerros", "text": "Recorre Cerro Alegre y Concepción a las 6 PM. La luz sobre los murales crea un escenario cinematográfico único." },
+    { "icon": "train", "title": "Circuito de Ascensores", "text": "Usa el Ascensor El Peral y el Reina Victoria. Son museos vivos que te conectan con la historia de la ciudad." },
+    { "icon": "camera", "title": "Miradores Secretos", "text": "Visita el Paseo Yugoslavo al anochecer. Es el mejor punto para ver cómo se encienden las luces de los barcos." },
+    { "icon": "utensils", "title": "Sabores del Puerto", "text": "No te vayas sin probar la Chorrillana original o los Mariscos frescos en el Mercado al mediodía." }
   ],
   "contact": {
     "whatsapp": "+569 5919 1835",
     "facebook": "https://web.facebook.com/profile.php?id=61577868307542",
-    "address": "Valparaíso, Chile"
+    "address": "Pasaje El Vergel, Valparaíso, Chile",
+    "gmaps_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1672.6373809623832!2d-71.616782!3d-33.045866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689e0d9b5b4859f%3A0xe5a1b3e8c1e8a8e1!2sValpara%C3%ADso%2C%20Chile!5e0!3m2!1ses!2scl!4v1700000000000!5m2!1ses!2scl"
   },
+  "reviews_title_text": "Lo que dicen nuestros huéspedes",
   "reviews": [
-    {
-      "stars": "★★★★★",
-      "text": "“La vista nocturna es simplemente espectacular. El hostal es súper tranquilo y la atención de los dueños te hace sentir muy cómodo. ¡Volveré sin duda!”",
-      "client": "Andrea M., 🇨🇱"
-    },
-    {
-      "stars": "★★★★★",
-      "text": "“Perfecto para mochileros que buscan algo de nivel y buen precio. Habitaciones impecables y una ubicación que te permite llegar a todo caminando.”",
-      "client": "Mark R., 🇺🇸"
-    },
-    {
-      "stars": "★★★★★",
-      "text": "“Un lugar lleno de magia. La habitación con balcón es un sueño. El trato fue espectacular, sientes la verdadera vibra porteña.”"
-    }
-  ]
+    { "stars": "★★★★★", "text": "“La vista nocturna es simplemente espectacular. El hostal es súper tranquilo y la atención de los dueños te hace sentir en casa.”", "client": "Andrea M., 🇨🇱" },
+    { "stars": "★★★★★", "text": "“Incredible place for remote workers. The WiFi was flawless and working with that view was a dream. Best value in Valparaíso.”", "client": "Mark R., 🇺🇸" },
+    { "stars": "★★★★★", "text": "“Um lugar mágico. O quarto con varanda é um sonho realizado. Sentimos a verdadera vibra porteña. Voltaremos!”", "client": "Camila y João, 🇧🇷" }
+  ],
+  "cta_title": "No te quedes sin tu habitación",
+  "cta_desc": "Alta demanda en temporada. Reserva rápida en minutos con atención directa sin intermediarios.",
+  "cta_button_text": "Reservar ahora por WhatsApp"
 }

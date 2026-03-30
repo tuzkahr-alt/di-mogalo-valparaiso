@@ -22,14 +22,14 @@
     <header id="header">
         <div class="container header-container">
             <div class="logo">
-                <!-- Reemplacé con el nuevo logo de DM -->
-                <img src="558786356_122136141164928943_8942268156538273505_n.jpg" alt="Logo Hostal Di'Mogalo">
+                <img src="logo_clean.png" alt="Logo Hostal Di'Mogalo">
             </div>
             <nav>
                 <ul>
                     <li><a href="#inicio" data-i18n="nav_home">Inicio</a></li>
                     <li><a href="#habitaciones" data-i18n="nav_rooms">Habitaciones</a></li>
                     <li><a href="#servicios" data-i18n="nav_services">Servicios</a></li>
+                    <li><a href="#ubicacion" data-i18n="nav_location">Ubicación</a></li>
                     <li><a href="#tips" data-i18n="nav_tips">Tips Turísticos</a></li>
                     <li><a href="#contacto" class="btn-cta-small" data-i18n="nav_book">Reservar</a></li>
                 </ul>
@@ -45,6 +45,9 @@
                 <a href="https://web.facebook.com/profile.php?id=61577868307542" target="_blank" class="social-icon header-fb" aria-label="Facebook">
                     <i data-lucide="facebook"></i>
                 </a>
+                <a href="/admin" class="social-icon" aria-label="Admin Login" title="Admin">
+                    <i data-lucide="user"></i>
+                </a>
                 <div class="menu-mobile">
                     <i data-lucide="menu"></i>
                 </div>
@@ -56,8 +59,9 @@
     <section id="inicio" class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content container">
-            <h1 id="hero-title" class="fade-in" data-i18n="hero_title">Descansa con la mejor vista de Valparaíso</h1>
-            <p id="hero-subtitle" class="fade-in-delay" data-i18n="hero_sub">Habitaciones cómodas, ambiente tranquilo y una experiencia única frente a la bahía.</p>
+            <span class="hero-brand fade-in" style="display: block; font-family: 'Outfit'; font-size: 1.5rem; color: var(--primary); letter-spacing: 5px; text-transform: uppercase; margin-bottom: 1rem;">Hostal Di'Mogalo</span>
+            <h1 id="hero-title" class="fade-in" data-i18n="hero_title">Despierta con la mejor vista de la bahía de Valparaíso</h1>
+            <p id="hero-subtitle" class="fade-in-delay" data-i18n="hero_sub">Un refugio de paz en el corazón de los cerros. Habitaciones exclusivas, ambiente íntimo y una panorámica inolvidable.</p>
             <div class="hero-actions fade-in-delay-2">
                 <a href="https://wa.me/56959191835?text=Hola,%20quiero%20consultar%20por%20disponibilidad%20en%20Hostal%20Di’Mogalo" class="btn btn-primary" target="_blank" data-i18n="btn_whatsapp">
                     Reservar por WhatsApp
@@ -75,19 +79,19 @@
         <div class="container">
             <div class="experience-content" data-reveal>
                 <span class="section-tag" data-i18n="exp_tag">Experiencia Di'Mogalo</span>
-                <h2 data-i18n="exp_title">“No es solo hospedarte… es despertar y dormir con una de las vistas más hermosas de Chile.”</h2>
-                <div class="experience-features">
+                <h2 id="exp-title-main" data-i18n="exp_title">“Hostal Di'Mogalo no es solo un lugar donde dormir… es el balcón desde donde Valparaíso te cuenta sus historias.”</h2>
+                <div id="exp-features-container" class="experience-features">
                     <div class="exp-item">
                         <i data-lucide="moon"></i>
-                        <span data-i18n="exp_f1">Vista nocturna privilegiada</span>
+                        <span data-i18n="exp_f1">Contempla el espectáculo de luces del puerto</span>
                     </div>
                     <div class="exp-item">
                         <i data-lucide="coffee"></i>
-                        <span data-i18n="exp_f2">Tranquilidad absoluta</span>
+                        <span data-i18n="exp_f2">Desayuna frente al océano en paz total</span>
                     </div>
                     <div class="exp-item">
                         <i data-lucide="map-pin"></i>
-                        <span data-i18n="exp_f3">Ubicación estratégica</span>
+                        <span data-i18n="exp_f3">Camina a los murales más famosos en minutos</span>
                     </div>
                 </div>
             </div>
@@ -99,21 +103,54 @@
         <div class="container">
             <h2 class="section-title" data-reveal data-i18n="rooms_title">Nuestras Habitaciones</h2>
             
-            <div class="room-card" data-reveal>
-                <div class="room-image">
-                    <!-- Agregamos la nueva habitación -->
-                    <img src="1.jpg" alt="Habitación con balcón">
+            <div id="rooms-container">
+                <div class="room-card" data-reveal>
+                    <div class="room-image">
+                        <img src="1.jpg" alt="Suite Privada con Balcón Panorámico">
+                    </div>
+                    <div class="room-details">
+                        <h3>Suite Privada con Balcón Panorámico</h3>
+                        <p>Nuestra joya. Un espacio bañado en luz natural con un amplio ventanal que se abre a Valparaíso y su puerto. Perfecta para quienes buscan inspiración y romance.</p>
+                        <ul class="room-bullets">
+                            <li><i data-lucide="check"></i> <span>Cama Queen Ergonómica</span></li>
+                            <li><i data-lucide="check"></i> <span>Balcón Privado al Mar</span></li>
+                            <li><i data-lucide="check"></i> <span>Escritorio Mirador</span></li>
+                            <li><i data-lucide="check"></i> <span>Privacidad Absoluta</span></li>
+                        </ul>
+                        <a href="https://wa.me/56959191835" class="btn btn-primary" data-i18n="btn_avail">Consultar disponibilidad</a>
+                    </div>
                 </div>
-                <div class="room-details">
-                    <h3 data-i18n="r1_title">Habitación Privada con Balcón</h3>
-                    <p data-i18n="r1_desc">Ambiente cálido con un gran ventanal y acceso directo al exterior para disfrutar de Valparaíso y la bahía.</p>
-                    <ul class="room-bullets">
-                        <li><i data-lucide="check"></i> <span data-i18n="r1_b1">Cama reconfortante y espaciosa</span></li>
-                        <li><i data-lucide="check"></i> <span data-i18n="r1_b2">Luz natural y detalles acogedores</span></li>
-                        <li><i data-lucide="check"></i> <span data-i18n="r1_b3">Privacidad total</span></li>
-                        <li><i data-lucide="check"></i> <span data-i18n="r1_b4">Ideal para relajarse</span></li>
-                    </ul>
-                    <a href="https://wa.me/56959191835?text=Hola,%20quiero%20conocer%20disponibilidad%20de%20habitaciones" class="btn btn-primary" data-i18n="btn_avail">Consultar disponibilidad</a>
+                <div class="room-card" data-reveal>
+                    <div class="room-image">
+                        <img src="2.jpg" alt="Habitación Doble Superior 'Atardecer'">
+                    </div>
+                    <div class="room-details">
+                        <h3>Habitación Doble Superior 'Atardecer'</h3>
+                        <p>Donde el diseño porteño se une con el confort moderno. Amplia, elegante y diseñada para un descanso profundo tras recorrer las calles mágicas.</p>
+                        <ul class="room-bullets">
+                            <li><i data-lucide="check"></i> <span>Cama King Size</span></li>
+                            <li><i data-lucide="check"></i> <span>Decoración de Autor</span></li>
+                            <li><i data-lucide="check"></i> <span>WiFi 5G dedicada</span></li>
+                            <li><i data-lucide="check"></i> <span>Ventilación Natural</span></li>
+                        </ul>
+                        <a href="https://wa.me/56959191835" class="btn btn-primary" data-i18n="btn_avail">Consultar disponibilidad</a>
+                    </div>
+                </div>
+                <div class="room-card" data-reveal>
+                    <div class="room-image">
+                        <img src="4.jpg" alt="Habitación Twin 'Vista Alegre'">
+                    </div>
+                    <div class="room-details">
+                        <h3>Habitación Twin 'Vista Alegre'</h3>
+                        <p>Espacio compartido con alma de hogar. Ideal para viajeros que desean calidad, seguridad y la mejor ubicación sin renunciar a la belleza.</p>
+                        <ul class="room-bullets">
+                            <li><i data-lucide="check"></i> <span>Camas Flex Plus</span></li>
+                            <li><i data-lucide="check"></i> <span>Compartimientos Seguros</span></li>
+                            <li><i data-lucide="check"></i> <span>Luz Natural</span></li>
+                            <li><i data-lucide="check"></i> <span>Acceso a Kitchenette</span></li>
+                        </ul>
+                        <a href="https://wa.me/56959191835" class="btn btn-primary" data-i18n="btn_avail">Consultar disponibilidad</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,26 +164,26 @@
                 <h2 class="section-title" data-i18n="tips_title">Consejos para disfrutar Valparaíso</h2>
                 <p class="tips-intro" data-i18n="tips_desc">Valparaíso es una ciudad mágica llena de cerros, colores y arte. Aquí tienes nuestros mejores consejos para aprovecharla al máximo:</p>
             </div>
-            <div class="tips-grid" data-reveal>
+            <div id="tips-container" class="tips-grid" data-reveal>
                 <div class="tip-card">
                     <i data-lucide="sun"></i>
-                    <h3 data-i18n="t1_t">Recorre de día</h3>
-                    <p data-i18n="t1_d">Camina por el Cerro Alegre y Concepción durante el día para descubrir los mejores murales y cafeterías.</p>
+                    <h3>Hora Dorada en los Cerros</h3>
+                    <p>Recorre Cerro Alegre y Concepción a las 6 PM. La luz sobre los murales crea un escenario cinematográfico único.</p>
                 </div>
                 <div class="tip-card">
                     <i data-lucide="train"></i>
-                    <h3 data-i18n="t2_t">Usa los Ascensores</h3>
-                    <p data-i18n="t2_d">Son patrimonio nacional, muy económicos y te ahorrarán subir muchas escaleras. ¡Una experiencia clásica!</p>
+                    <h3>Circuito de Ascensores</h3>
+                    <p>Usa el Ascensor El Peral y el Reina Victoria. Son museos vivos que te conectan con la historia de la ciudad.</p>
                 </div>
                 <div class="tip-card">
                     <i data-lucide="camera"></i>
-                    <h3 data-i18n="t3_t">Miradores Essenciales</h3>
-                    <p data-i18n="t3_d">No te pierdas el Paseo Gervasoni y el Paseo Atkinson al atardecer para fotos inolvidables.</p>
+                    <h3>Miradores Secretos</h3>
+                    <p>Visita el Paseo Yugoslavo al anochecer. Es el mejor punto para ver cómo se encienden las luces de los barcos.</p>
                 </div>
                 <div class="tip-card">
                     <i data-lucide="utensils"></i>
-                    <h3 data-i18n="t4_t">Gastronomía del Mar</h3>
-                    <p data-i18n="t4_d">Prueba las empanadas de mariscos y el tradicional caldillo de congrio cerca del puerto.</p>
+                    <h3>Sabores del Puerto</h3>
+                    <p>No te vayas sin probar la Chorrillana original o los Mariscos frescos en el Mercado al mediodía.</p>
                 </div>
             </div>
         </div>
@@ -156,26 +193,44 @@
     <section id="servicios" class="services section-padding">
         <div class="container">
             <h2 class="section-title" data-reveal data-i18n="serv_title">Todo lo que necesitas</h2>
-            <div class="services-grid" data-reveal>
+            <div id="services-container" class="services-grid" data-reveal>
                 <div class="service-item">
                     <i data-lucide="wifi"></i>
-                    <h3 data-i18n="s1_t">WiFi Alta Velocidad</h3>
-                    <p data-i18n="s1_d">Conectividad estable en todas las áreas de la casa.</p>
+                    <h3>Conectividad Total</h3>
+                    <p>Fibra óptica de alta velocidad (500MB) perfecta para nómadas digitales y videollamadas.</p>
                 </div>
                 <div class="service-item">
                     <i data-lucide="wind"></i>
-                    <h3 data-i18n="s2_t">Ambiente Tranquilo</h3>
-                    <p data-i18n="s2_d">Ideal para descansar después de recorrer los cerros.</p>
+                    <h3>Santuario de Reposo</h3>
+                    <p>Ambiente diseñado para el silencio y la desconexión total, lejos del ruido vehicular.</p>
                 </div>
                 <div class="service-item">
                     <i data-lucide="navigation"></i>
-                    <h3 data-i18n="s3_t">Ubicación Pro</h3>
-                    <p data-i18n="s3_d">Cerca de los puntos más emblemáticos de la ciudad.</p>
+                    <h3>Cerca de la Magia</h3>
+                    <p>A pasos de los ascensores patrimoniales y los mejores miradores del Cerro Alegre.</p>
                 </div>
                 <div class="service-item">
                     <i data-lucide="users"></i>
-                    <h3 data-i18n="s4_t">Atención Familiar</h3>
-                    <p data-i18n="s4_d">Nos encargamos de que te sientas como en casa.</p>
+                    <h3>Anfitriones Locales</h3>
+                    <p>Atención cálida y consejos de expertos para vivir la ciudad como un verdadero porteño.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="ubicacion" class="location-section section-padding">
+        <div class="container">
+            <h2 class="section-title text-center" data-reveal data-i18n="loc_title">Nuestra Ubicación</h2>
+            <div class="location-grid" data-reveal>
+                <div class="address-card">
+                    <i data-lucide="map-pin"></i>
+                    <h3 data-i18n="loc_subtitle">Cómo llegar</h3>
+                    <p id="footer-address-main">Pasaje El Vergel, Valparaíso, Chile</p>
+                    <p data-i18n="loc_desc">Estamos ubicados en una de las zonas más tranquilas de los cerros, con fácil acceso a ascensores y miradores.</p>
+                </div>
+                <div class="map-container">
+                    <iframe id="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1672.6373809623832!2d-71.616782!3d-33.045866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689e0d9b5b4859f%3A0xe5a1b3e8c1e8a8e1!2sValpara%C3%ADso%2C%20Chile!5e0!3m2!1ses!2scl!4v1700000000000!5m2!1ses!2scl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
@@ -188,20 +243,20 @@
                 <span class="section-tag" data-i18n="rev_tag">Reseñas</span>
                 <h2 class="section-title" data-i18n="rev_title">Lo que dicen nuestros huéspedes</h2>
             </div>
-            <div class="testimonials" data-reveal>
+            <div id="reviews-container" class="testimonials" data-reveal>
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <p data-i18n="rev1_t">“La vista nocturna es simplemente espectacular. El hostal es súper tranquilo y la atención de los dueños te hace sentir muy cómodo. ¡Volveré sin duda!”</p>
+                    <p>“La vista nocturna es simplemente espectacular. El hostal es súper tranquilo y la atención de los dueños te hace sentir en casa.”</p>
                     <span class="client">Andrea M., 🇨🇱</span>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <p data-i18n="rev2_t">“Perfecto para mochileros que buscan algo de nivel y buen precio. Habitaciones impecables y una ubicación que te permite llegar a todo caminando.”</p>
+                    <p>“Incredible place for remote workers. The WiFi was flawless and working with that view was a dream. Best value in Valparaíso.”</p>
                     <span class="client">Mark R., 🇺🇸</span>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <p data-i18n="rev3_t">“Un lugar lleno de magia. La habitación con balcón es un sueño. El trato fue espectacular, sientes la verdadera vibra porteña.”</p>
+                    <p>“Um lugar mágico. O quarto com varanda é um sonho realizado. Sentimos a verdadeira vibra porteña. Voltaremos!”</p>
                     <span class="client">Camila y João, 🇧🇷</span>
                 </div>
             </div>

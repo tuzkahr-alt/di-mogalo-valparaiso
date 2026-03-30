@@ -3,6 +3,7 @@ const translations = {
     nav_home: "Inicio",
     nav_rooms: "Habitaciones",
     nav_services: "Servicios",
+    nav_location: "Ubicación",
     nav_tips: "Tips Turísticos",
     nav_book: "Reservar",
     hero_title: "Descansa con la mejor vista de Valparaíso",
@@ -53,12 +54,16 @@ const translations = {
     footer_slogan: "La mejor vista de Valparaíso.",
     footer_links: "Enlaces",
     footer_contact: "Contacto",
-    footer_rights: "Todos los derechos reservados."
+    footer_rights: "Todos los derechos reservados.",
+    loc_title: "Nuestra Ubicación",
+    loc_subtitle: "Cómo llegar",
+    loc_desc: "Estamos ubicados en una de las zonas más tranquilas de los cerros, con fácil acceso a ascensores y miradores."
   },
   en: {
     nav_home: "Home",
     nav_rooms: "Rooms",
     nav_services: "Services",
+    nav_location: "Location",
     nav_tips: "Tourist Tips",
     nav_book: "Book Now",
     hero_title: "Rest with the best view of Valparaíso",
@@ -109,12 +114,16 @@ const translations = {
     footer_slogan: "The best view of Valparaíso.",
     footer_links: "Links",
     footer_contact: "Contact",
-    footer_rights: "All rights reserved."
+    footer_rights: "All rights reserved.",
+    loc_title: "Our Location",
+    loc_subtitle: "How to get there",
+    loc_desc: "We are located in one of the quietest areas of the hills, with easy access to funiculars and viewpoints."
   },
   pt: {
     nav_home: "Início",
     nav_rooms: "Quartos",
     nav_services: "Serviços",
+    nav_location: "Localização",
     nav_tips: "Dicas de Turismo",
     nav_book: "Reservar",
     hero_title: "Descanse com a melhor vista de Valparaíso",
@@ -165,7 +174,10 @@ const translations = {
     footer_slogan: "A melhor vista de Valparaíso.",
     footer_links: "Links",
     footer_contact: "Contato",
-    footer_rights: "Todos os direitos reservados."
+    footer_rights: "Todos os direitos reservados.",
+    loc_title: "Nossa Localização",
+    loc_subtitle: "Como chegar",
+    loc_desc: "Estamos localizados em uma das áreas mais tranquilas dos morros, com fácil acesso a funiculares e mirantes."
   }
 };
 
@@ -282,6 +294,19 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!response.ok) return;
       const data = await response.json();
       
+      // Update General / Logos
+      if (data.logo) {
+        const logoImg = document.querySelector('.logo img');
+        if (logoImg) logoImg.src = data.logo;
+      }
+      if (data.footer_logo) {
+        const footLogo = document.querySelector('.footer-logo img');
+        if (footLogo) footLogo.src = data.footer_logo;
+      }
+      if (data.hostal_name) {
+        document.querySelectorAll('.hero-brand').forEach(el => el.textContent = data.hostal_name);
+      }
+
       // Update Hero
       if (data.hero) {
         if (data.hero.title) document.getElementById('hero-title').textContent = data.hero.title;
@@ -289,22 +314,146 @@ document.addEventListener('DOMContentLoaded', () => {
         if (data.hero.background) document.getElementById('inicio').style.backgroundImage = `url('${data.hero.background}')`;
       }
       
+      // Update Experience
+      if (data.exp_section_title) {
+        const expTag = document.querySelector('.experience .section-tag');
+        if (expTag) expTag.textContent = data.exp_section_title;
+      }
+      if (data.experience) {
+        if (data.experience.title) document.getElementById('exp-title-main').textContent = data.experience.title;
+        const expContainer = document.getElementById('exp-features-container');
+        if (expContainer && data.experience.items) {
+          expContainer.innerHTML = data.experience.items.map(item => `
+            <div class="exp-item">
+              <i data-lucide="${item.icon}"></i>
+              <span>${item.text}</span>
+            </div>
+          `).join('');
+        }
+      }
+
+      // Update Rooms
+      if (data.rooms_title_text) {
+        const roomsTitle = document.querySelector('#habitaciones .section-title');
+        if (roomsTitle) roomsTitle.textContent = data.rooms_title_text;
+      }
+      if (data.rooms && data.rooms.length > 0) {
+        const roomsContainer = document.getElementById('rooms-container');
+        if (roomsContainer) {
+          roomsContainer.innerHTML = data.rooms.map(room => `
+            <div class="room-card" data-reveal>
+              <div class="room-image">
+                <img src="${room.image}" alt="${room.title}">
+              </div>
+              <div class="room-details">
+                <h3>${room.title}</h3>
+                <p>${room.description}</p>
+                <ul class="room-bullets">
+                  ${(room.features || []).map(f => `
+                    <li><i data-lucide="check"></i> <span>${f}</span></li>
+                  `).join('')}
+                </ul>
+                <a href="https://wa.me/${(data.contact?.whatsapp || '').replace(/\s+/g, '')}" class="btn btn-primary" data-i18n="btn_avail">Consultar disponibilidad</a>
+              </div>
+            </div>
+          `).join('');
+        }
+      }
+
+      // Update Services
+      if (data.services_title_text) {
+        const servTitle = document.querySelector('#servicios .section-title');
+        if (servTitle) servTitle.textContent = data.services_title_text;
+      }
+      if (data.services && data.services.length > 0) {
+        const servicesContainer = document.getElementById('services-container');
+        if (servicesContainer) {
+          servicesContainer.innerHTML = data.services.map(ser => `
+            <div class="service-item">
+              <i data-lucide="${ser.icon}"></i>
+              <h3>${ser.title}</h3>
+              <p>${ser.text}</p>
+            </div>
+          `).join('');
+        }
+      }
+
+      // Update Tips
+      if (data.tips_title_main) {
+        const tipsTitle = document.querySelector('#tips .section-title');
+        if (tipsTitle) tipsTitle.textContent = data.tips_title_main;
+      }
+      if (data.tips_desc_main) {
+        const tipsDesc = document.querySelector('.tips-intro');
+        if (tipsDesc) tipsDesc.textContent = data.tips_desc_main;
+      }
+      if (data.tips && data.tips.length > 0) {
+        const tipsContainer = document.getElementById('tips-container');
+        if (tipsContainer) {
+          tipsContainer.innerHTML = data.tips.map(tip => `
+            <div class="tip-card">
+              <i data-lucide="${tip.icon}"></i>
+              <h3>${tip.title}</h3>
+              <p>${tip.text}</p>
+            </div>
+          `).join('');
+        }
+      }
+
+      // Update Reviews
+      if (data.reviews_title_text) {
+        const revTitle = document.querySelector('.reviews-section .section-title');
+        if (revTitle) revTitle.textContent = data.reviews_title_text;
+      }
+      if (data.reviews && data.reviews.length > 0) {
+        const reviewsContainer = document.getElementById('reviews-container');
+        if (reviewsContainer) {
+          reviewsContainer.innerHTML = data.reviews.map(rev => `
+            <div class="testimonial-card">
+              <div class="stars">${rev.stars}</div>
+              <p>${rev.text}</p>
+              <span class="client">${rev.client}</span>
+            </div>
+          `).join('');
+        }
+      }
+
+      // Update CTA Section
+      if (data.cta_title) document.getElementById('cta-title').textContent = data.cta_title;
+      if (data.cta_desc) document.getElementById('cta-desc').textContent = data.cta_desc;
+      if (data.cta_button_text) {
+        const ctaBtn = document.getElementById('cta-whatsapp-link');
+        if (ctaBtn) ctaBtn.textContent = data.cta_button_text;
+      }
+
       // Update Contact/WhatsApp
       if (data.contact && data.contact.whatsapp) {
-        const waLink = `https://wa.me/${data.contact.whatsapp.replace(/\s+/g, '')}`;
+        const waLink = `https://wa.me/${data.contact.whatsapp.replace(/\s+/g, '').replace('+', '')}`;
         document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
           link.href = waLink;
         });
         if (document.getElementById('whatsapp-number-display')) {
           document.getElementById('whatsapp-number-display').textContent = data.contact.whatsapp;
         }
+        if (data.contact.address) {
+          if (document.getElementById('footer-address-main')) document.getElementById('footer-address-main').textContent = data.contact.address;
+        }
+        if (data.contact.gmaps_embed) {
+          const mapIframe = document.getElementById('map-iframe');
+          if (mapIframe) mapIframe.src = data.contact.gmaps_embed;
+        }
+      }
+
+      // Re-initialize Lucide and Reveal for new elements
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
       }
       
-      // Note: For lists like rooms or reviews, we'd need more complex injection.
-      // For now, we update the primary fields to demonstrate the CMS functionality.
-      
+      // Re-trigger reveal check
+      revealOnScroll();
+
     } catch (err) {
-      console.log('CMS data not loaded, using defaults.');
+      console.error('Error loading CMS data:', err);
     }
   };
 
