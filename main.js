@@ -337,27 +337,34 @@ document.addEventListener('DOMContentLoaded', () => {
         const roomsTitle = document.querySelector('#habitaciones .section-title');
         if (roomsTitle) roomsTitle.textContent = data.rooms_title_text;
       }
+      console.log('Rendering rooms...', data.rooms ? data.rooms.length : 0);
       if (data.rooms && data.rooms.length > 0) {
         const roomsContainer = document.getElementById('rooms-container');
         if (roomsContainer) {
-          roomsContainer.innerHTML = data.rooms.map(room => `
-            <div class="room-card" data-reveal>
-              <div class="room-image">
-                <img src="${room.image}" alt="${room.title}">
+          roomsContainer.innerHTML = data.rooms.map(room => {
+            const phoneNumber = (data.contact?.whatsapp || '').replace(/\s+/g, '').replace(/\+/g, '');
+            return `
+              <div class="room-card revealed" data-reveal>
+                <div class="room-image">
+                  <img src="${room.image || ''}" alt="${room.title || ''}">
+                </div>
+                <div class="room-details">
+                  <h3>${room.title || 'Habitación'}</h3>
+                  <p>${room.description || ''}</p>
+                  <ul class="room-bullets">
+                    ${(room.features || []).map(f => `
+                      <li><i data-lucide="check"></i> <span>${f}</span></li>
+                    `).join('')}
+                  </ul>
+                  <a href="https://wa.me/${phoneNumber}" class="btn btn-primary" data-i18n="btn_avail">Consultar disponibilidad</a>
+                </div>
               </div>
-              <div class="room-details">
-                <h3>${room.title}</h3>
-                <p>${room.description}</p>
-                <ul class="room-bullets">
-                  ${(room.features || []).map(f => `
-                    <li><i data-lucide="check"></i> <span>${f}</span></li>
-                  `).join('')}
-                </ul>
-                <a href="https://wa.me/${(data.contact?.whatsapp || '').replace(/\s+/g, '')}" class="btn btn-primary" data-i18n="btn_avail">Consultar disponibilidad</a>
-              </div>
-            </div>
-          `).join('');
+            `;
+          }).join('');
+          console.log('Rooms HTML injected.');
         }
+      } else {
+        console.warn('No rooms data found to render.');
       }
 
       // Update Services
