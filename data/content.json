@@ -1,6 +1,6 @@
 {
-  "logo": "logo_official.png",
-  "footer_logo": "logo_official.png",
+  "logo": "logo_clean.png",
+  "footer_logo": "logo_clean.png",
   "hostal_name": "Hostal Di'Mogalo & Propiedades",
   "hero": {
     "title": "Un ambiente de paz y equilibrio con la mejor vista porteña",
@@ -22,25 +22,25 @@
       "title": "Habitación Diaria Pareja",
       "description": "Disfruta de la mejor vista de la bahía en un ambiente íntimo y acogedor. Valor: $25.000.",
       "image": "1.jpg",
-      "features": ["Cama 2 plazas", "Smart TV", "Balcón independiente", "Vista a la bahía", "Baño compartido"]
+      "features": ["🛌 Cama 2 plazas", "📺 Smart TV", "🌅 Balcón independiente", "🌊 Vista a la bahía", "🚿 Baño compartido"]
     },
     {
       "title": "Habitación Diaria Individual",
       "description": "Perfecta para viajeros solitarios o trabajadores que buscan descanso y tranquilidad. Valor: $15.000.",
       "image": "2.jpg",
-      "features": ["Cama individual", "Smart TV", "Wi-Fi alta velocidad", "Baño compartido"]
+      "features": ["🛌 Cama individual", "📺 Smart TV", "📶 Wi-Fi alta velocidad", "🚿 Baño compartido"]
     },
     {
       "title": "Arriendo Mensual Matrimonial",
       "description": "Ideal para estadías largas. Valor: Desde $250.000 a $270.000 (según comodidades).",
       "image": "VISTA.jpg",
-      "features": ["Especial para parejas", "Smart TV incluido", "Acceso a áreas comunes", "Cerca de Plazas Bismark"]
+      "features": ["👩‍❤️‍👨 Especial para parejas", "📺 Smart TV incluido", "🏠 Acceso a áreas comunes", "🌳 Cerca de Plazas Bismark"]
     },
     {
       "title": "Arriendo Mensual Individual",
       "description": "Ideal para estudiantes o trabajadores. Valor: Desde $170.000 a $230.000.",
       "image": "4.jpg",
-      "features": ["Ambiente de estudio y paz", "Smart TV", "Wi-Fi dedicado", "Ubicación estratégica"]
+      "features": ["✏️ Ambiente de estudio y paz", "📺 Smart TV", "📶 Wi-Fi dedicado", "📍 Ubicación estratégica"]
     }
   ],
   "services_title_text": "Amenidades y Servicios",
@@ -67,7 +67,7 @@
   "reviews": [
     { "stars": "★★★★★", "text": "“La vista nocturna es simplemente espectacular. El hostal es súper tranquilo y la atención de los dueños te hace sentir en casa.”", "client": "Andrea M., 🇨🇱" },
     { "stars": "★★★★★", "text": "“Perfecto para estudiar. El ambiente de silencio y la vista me ayudaron mucho en mis exámenes. Muy recomendado.”", "client": "Estudiante U. Valpo" },
-    { "stars": "★★★★★", "text": "“O quarto com varanda é incrível. A localização perto da Avenida Ecuador facilita tudo. Pessoal nota 10!”", "client": "Ricardo S., 🇧🇷" }
+    { "stars": "★★★★★", "text": "“O quarto com varanda é increíble. A localização perto da Avenida Ecuador facilita tudo. Pessoal nota 10!”", "client": "Ricardo S., 🇧🇷" }
   ],
   "cta_title": "Haz tu reserva ahora",
   "cta_desc": "Consulta disponibilidad para estadías diarias o arriendos mensuales directamente por WhatsApp.",

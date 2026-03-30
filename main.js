@@ -353,7 +353,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   <p>${room.description || ''}</p>
                   <ul class="room-bullets">
                     ${(room.features || []).map(f => `
-                      <li><i data-lucide="check"></i> <span>${f}</span></li>
+                      <li><span>${f}</span></li>
                     `).join('')}
                   </ul>
                   <a href="https://wa.me/${phoneNumber}" class="btn btn-primary" data-i18n="btn_avail">Consultar disponibilidad</a>
