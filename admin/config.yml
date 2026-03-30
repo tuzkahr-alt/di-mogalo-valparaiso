@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: tuzkahr-alt/HOSTAL-WEB
+  name: git-gateway
   branch: master
 
 media_folder: "" # Store images in the root folder as they currently are
