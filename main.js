@@ -217,8 +217,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Reveal Animations on Scroll
-  const revealElements = document.querySelectorAll('[data-reveal]');
   const revealOnScroll = () => {
+    const revealElements = document.querySelectorAll('[data-reveal]');
     const triggerBottom = window.innerHeight * 0.9;
     
     revealElements.forEach(el => {
