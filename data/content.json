@@ -40,15 +40,15 @@
       "title": "Arriendo Mensual Individual",
       "description": "Ideal para estudiantes o trabajadores. Valor: Desde $170.000 a $230.000.",
       "image": "4.jpg",
-      "features": ["Ambiente de estudio y paz", "Smart TV", "Lavandería incluida", "Ubicación estratégica"]
+      "features": ["Ambiente de estudio y paz", "Smart TV", "Wi-Fi dedicado", "Ubicación estratégica"]
     }
   ],
   "services_title_text": "Amenidades y Servicios",
   "services": [
-    { "icon": "wifi", "title": "Servicios Incluidos", "text": "Wi-Fi, Smart TV, Ropa de cama, Cocina full equipada, Quincho, Terrazas y Lavandería (1 vez p/semana)." },
-    { "icon": "star", "title": "Servicios Extra ($)", "text": "Uso de Jacuzzi, Gimnasio, Desayuno, Almuerzo y Once." },
-    { "icon": "droplets", "title": "Nota Importante", "text": "Contamos con 2 baños compartidos amplios para un total de 6 habitaciones, asegurando higiene constante." },
-    { "icon": "credit-card", "title": "Métodos de Pago", "text": "Aceptamos Efectivo y Transferencias bancarias directas." }
+    { "icon": "wifi", "title": "Conectividad y Ocio", "text": "Wi-Fi de alta velocidad y Smart TV en cada habitación para tu entretenimiento." },
+    { "icon": "home", "title": "Áreas Comunes", "text": "Acceso a cocina grande full equipada, quincho para asados y terrazas para almorzar o cenar." },
+    { "icon": "droplets", "title": "Baños Compartidos", "text": "Contamos con 2 baños amplios y limpios compartidos entre un total de 6 habitaciones." },
+    { "icon": "credit-card", "title": "Pagos Flexibles", "text": "Aceptamos pagos en Efectivo y Transferencias bancarias directas." }
   ],
   "tips_title_main": "Reglas de Convivencia",
   "tips_desc_main": "Para asegurar un ambiente de paz y equilibrio, solicitamos a nuestros huéspedes respetar las siguientes normas:",
