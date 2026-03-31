@@ -783,3 +783,64 @@ footer {
   .room-details { padding: 2rem 1.5rem; }
   .cta-final h2 { font-size: 2.4rem; }
 }
+
+/* Gallery Section */
+.gallery-section {
+    background-color: #fff;
+    padding-bottom: 2rem;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 2rem;
+}
+.gallery-item {
+    position: relative;
+    border-radius: 40px;
+    overflow: hidden;
+    height: 600px;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.08);
+    background-color: #000;
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 2s cubic-bezier(0.16, 1, 0.3, 1);
+    opacity: 0.9;
+}
+.gallery-item:hover img {
+    transform: scale(1.1);
+    opacity: 1;
+}
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 3rem;
+    background: linear-gradient(transparent, rgba(0,0,0,0.9));
+    color: #fff;
+    opacity: 1;
+    transition: var(--transition);
+}
+.gallery-overlay p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Outfit';
+    line-height: 1.3;
+    max-width: 900px;
+}
+
+@media (max-width: 1024px) {
+    .gallery-item { height: 500px; }
+}
+
+@media (max-width: 768px) {
+    .gallery-grid { grid-template-columns: 1fr; }
+    .gallery-item { height: 450px; border-radius: 30px; }
+    .gallery-overlay { padding: 2.5rem 2rem; }
+    .gallery-overlay p { font-size: 1.3rem; }
+}
+

@@ -3,42 +3,46 @@
   "footer_logo": "logo_clean.png",
   "hostal_name": "Hostal Di'Mogalo & Propiedades",
   "hero": {
-    "title": "Un ambiente de paz y equilibrio con la mejor vista porteña",
-    "subtitle": "Estamos ubicados en Valparaíso, a 1 minuto de Avenida Ecuador (Cerca de Plazas Bismark y Camogli).",
+    "title": "Tu balcón privado sobre la magia de Valparaíso",
+    "subtitle": "Vive una experiencia única en un ambiente de paz y equilibrio. La mejor vista del puerto te espera desde tu ventana.",
     "background": "VISTA.jpg"
   },
   "exp_section_title": "Experiencia Di'Mogalo",
   "experience": {
-    "title": "“Hostal Di'Mogalo no es solo un lugar donde dormir… es el balcón desde donde Valparaíso te cuenta sus historias.”",
+    "title": "“Hostal Di'Mogalo no es solo un lugar donde dormir… es el mirador donde el océano y los cerros se abrazan para ti.”",
     "items": [
-      { "icon": "moon", "text": "Contempla el espectáculo de luces del puerto" },
-      { "icon": "coffee", "text": "Desayuna frente al océano en paz total" },
-      { "icon": "map-pin", "text": "Cerca de Avenida Ecuador y Plazas patrimoniales" }
+      { "icon": "moon", "text": "Contempla el espectáculo de luces del puerto cada noche" },
+      { "icon": "coffee", "text": "Desayuna frente al Pacífico en paz absoluta" },
+      { "icon": "map-pin", "text": "A pasos de la Avenida Ecuador y el arte porteño" }
     ]
   },
+  "gallery": [
+    { "image": "vista_puerto.jpg", "caption": "Despierta con la postal perfecta del puerto de Valparaíso directamente desde tu habitación." },
+    { "image": "exterior_hostal_arriba.jpg", "caption": "Tu hogar en las alturas: arquitectura auténtica y una ubicación privilegiada en los cerros." }
+  ],
   "rooms_title_text": "Nuestras Habitaciones y Tarifas",
   "rooms": [
     {
       "title": "Habitación Diaria Pareja",
-      "description": "Disfruta de la mejor vista de la bahía en un ambiente íntimo y acogedor. Valor: $25.000.",
+      "description": "El rincón romántico perfecto. Disfruta de la intimidad y la vista más espectacular de la bahía desde tu balcón privado. Valor: $25.000.",
       "image": "1.jpg",
       "features": ["🛌 Cama 2 plazas", "📺 Smart TV", "🌅 Balcón independiente", "🌊 Vista a la bahía", "🚿 Baño compartido"]
     },
     {
       "title": "Habitación Diaria Individual",
-      "description": "Perfecta para viajeros solitarios o trabajadores que buscan descanso y tranquilidad. Valor: $15.000.",
+      "description": "Tu santuario de desconexión. Diseñada para viajeros que buscan paz, tranquilidad y una vista que invita a soñar. Valor: $15.000.",
       "image": "2.jpg",
       "features": ["🛌 Cama individual", "📺 Smart TV", "📶 Wi-Fi alta velocidad", "🚿 Baño compartido"]
     },
     {
       "title": "Arriendo Mensual Matrimonial",
-      "description": "Ideal para estadías largas. Valor: Desde $250.000 a $270.000 (según comodidades).",
+      "description": "Convierte el puerto en tu hogar. Espacio amplio y acogedor para estadías largas, rodeado de calma y belleza. Valor: Desde $250.000 a $270.000.",
       "image": "VISTA.jpg",
       "features": ["👩‍❤️‍👨 Especial para parejas", "📺 Smart TV incluido", "🏠 Acceso a áreas comunes", "🌳 Cerca de Plazas Bismark"]
     },
     {
       "title": "Arriendo Mensual Individual",
-      "description": "Ideal para estudiantes o trabajadores. Valor: Desde $170.000 a $230.000.",
+      "description": "Inspira tus días con el mejor entorno. El lugar ideal para estudiantes o profesionales que valoran el silencio y el arte. Valor: Desde $170.000 a $230.000.",
       "image": "4.jpg",
       "features": ["✏️ Ambiente de estudio y paz", "📺 Smart TV", "📶 Wi-Fi dedicado", "📍 Ubicación estratégica"]
     }
@@ -61,7 +65,7 @@
     "whatsapp": "+569 5919 1835",
     "facebook": "https://web.facebook.com/profile.php?id=61577868307542",
     "address": "Calle Israel 108, Valparaíso",
-    "gmaps_embed": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3330.0!2d-71.630579!3d-33.052335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1ses!2scl!4v1743377000000!5m2!1ses!2scl"
+    "gmaps_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1672.4841973434608!2d-71.63285433433604!3d-33.05241109999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689e123585d0c77%3A0xda5920d917ecd24a!2zSXNyYWVsIDEwOCwgVmFscGFyYcOtc28!5e0!3m2!1ses-419!2scl!4v1743400000000!5m2!1ses-419!2scl"
   },
   "reviews_title_text": "Lo que dicen nuestros huéspedes",
   "reviews": [

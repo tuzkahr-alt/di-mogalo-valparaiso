@@ -407,6 +407,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
+      // Update Gallery
+      if (data.gallery && data.gallery.length > 0) {
+        const galleryContainer = document.getElementById('gallery-container');
+        if (galleryContainer) {
+          galleryContainer.innerHTML = data.gallery.map(item => `
+            <div class="gallery-item revealed" data-reveal>
+              <img src="${item.image}" alt="Galería Di'Mogalo">
+              <div class="gallery-overlay">
+                <p>${item.caption}</p>
+              </div>
+            </div>
+          `).join('');
+        }
+      }
+
       // Update Reviews
       if (data.reviews_title_text) {
         const revTitle = document.querySelector('.reviews-section .section-title');
